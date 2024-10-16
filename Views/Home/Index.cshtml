@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .cta-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #45a049;
+        }
+
+        .section {
+            padding: 4rem;
+            text-align: center;
+            margin: 2rem 0;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Animation */
+        keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .section {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Hospital Management System</h1>
+        <p>Managing Patients, Doctors, and Staff Efficiently</p>
+        <a href="/Account/Signup" class="cta-btn">Get Started</a>
+    </header>
+
+    <section class="section">
+        <h2>Patients</h2>
+        <p>Track your appointments, view medical records, and access prescriptions.</p>
+        <a href="/Patient/Dashboard" class="cta-btn">Patient Dashboard</a>
+    </section>
+
+    <section class="section">
+        <h2>Doctors</h2>
+        <p>Manage your appointments, review medical records, and issue prescriptions.</p>
+        <a href="/Doctor/Dashboard" class="cta-btn">Doctor Dashboard</a>
+    </section>
+
+    <section class="section">
+        <h2>Staff</h2>
+        <p>Oversee hospital operations, assign rooms, and manage surgeries.</p>
+        <a href="/Staff/Dashboard" class="cta-btn">Staff Dashboard</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hospital Management System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
